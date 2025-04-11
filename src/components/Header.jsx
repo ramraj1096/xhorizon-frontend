@@ -141,7 +141,7 @@ const Header = () => {
               <li>
                 <button
                   onClick={() => {
-                    navigate("/signup");
+                    navigate("/register");
                     setShowMenu(false);
                   }}
                   className="w-full mt-4 px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700"

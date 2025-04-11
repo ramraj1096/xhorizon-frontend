@@ -22,7 +22,7 @@ const ForgotPasswordPage = () => {
     }
 
     try {
-      const response = await sendOtp({ email });
+      const response = await sendOtp({ email, useCase:"resetPassword" });
       setIsLoading(true);
       if (response.success) {
         setIsSubmitted(true);

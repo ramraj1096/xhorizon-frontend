@@ -74,7 +74,7 @@ const EmailVerificationPage = () => {
         if (registerUser.success) {
           toast.success(registerUser.message);
           sessionStorage.removeItem("registerData");
-          navigate("/");
+          navigate("/login");
         } else {
           toast.error(registerUser.message || "Registration failed.");
         }

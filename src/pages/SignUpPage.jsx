@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import { motion } from "framer-motion";
 import Input from "../components/Input.jsx";
 import PasswordStrengthMeter from "../components/PasswordStrengthMeter.jsx";
-import { register } from "../apis/userApi.js";
+import { register } from "../apis/userApi.js"; 
 import { sendOtp } from "../apis/otpApi.js";
 
 const SignUpPage = () => {

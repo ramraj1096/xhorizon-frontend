@@ -1,6 +1,6 @@
 import Hero from "../components/Hero";
 import { Footer } from "../components/Footer";
-import Header from "../components/Header";
+import Header from "../components/Navbar";
 
 const Default = ({ children, showHero = false }) => {
   return (

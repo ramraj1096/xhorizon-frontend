@@ -24,7 +24,7 @@ export const Footer = () => {
           <ul className="flex flex-col gap-3 text-gray-600">
             <Link
               to="/"
-              className="hover:text-primary transition flex items-center gap-2"
+              className="hover:text- transition flex items-center gap-2"
             >
               <HomeIcon className="w-4 h-4" />
               Home

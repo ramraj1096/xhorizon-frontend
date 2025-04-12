@@ -67,13 +67,14 @@ const studentFeatures = [
   },
 ];
 
-
-
 const HomePage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gray-50" style={{ fontFamily: "'Inter', sans-serif" }}>
+    <div
+      className="min-h-screen bg-gray-50"
+      style={{ fontFamily: "'Inter', sans-serif" }}
+    >
       {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0 }}
@@ -96,7 +97,8 @@ const HomePage = () => {
             transition={{ duration: 1, delay: 0.5 }}
             className="mt-4 text-lg md:text-2xl max-w-3xl mx-auto"
           >
-            Your all-in-one platform to excel in academics, master coding, and kickstart your career.
+            Your all-in-one platform to excel in academics, master coding, and
+            kickstart your career.
           </motion.p>
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -130,7 +132,9 @@ const HomePage = () => {
                   alt={feature.title}
                   className="w-24 h-24 mx-auto mb-4 object-contain"
                 />
-                <h3 className="text-xl font-semibold text-indigo-600 mb-2">{feature.title}</h3>
+                <h3 className="text-xl font-semibold text-indigo-600 mb-2">
+                  {feature.title}
+                </h3>
                 <p className="text-gray-600">{feature.desc}</p>
               </motion.div>
             ))}
@@ -157,11 +161,12 @@ const HomePage = () => {
                   />
                 </div>
                 <div className="w-full md:w-1/2 text-center md:text-left">
-                  <h3 className="text-3xl font-bold text-indigo-600 mb-4">{feature.title}</h3>
+                  <h3 className="text-3xl font-bold text-indigo-600 mb-4">
+                    {feature.title}
+                  </h3>
                   <p className="text-lg text-gray-600">{feature.desc}</p>
                 </div>
               </motion.section>
-             
             </React.Fragment>
           ))}
         </div>
@@ -178,17 +183,23 @@ const HomePage = () => {
               {
                 step: "Sign Up",
                 desc: "Create your account in minutes.",
-                icon: <FaUserPlus className="w-16 h-16 text-indigo-600 mx-auto mb-4" />,
+                icon: (
+                  <FaUserPlus className="w-16 h-16 text-indigo-600 mx-auto mb-4" />
+                ),
               },
               {
                 step: "Learn & Code",
                 desc: "Access courses and coding tracks.",
-                icon: <FaBook className="w-16 h-16 text-indigo-600 mx-auto mb-4" />,
+                icon: (
+                  <FaBook className="w-16 h-16 text-indigo-600 mx-auto mb-4" />
+                ),
               },
               {
                 step: "Grow",
                 desc: "Track progress and land opportunities.",
-                icon: <FaChartLine className="w-16 h-16 text-indigo-600 mx-auto mb-4" />,
+                icon: (
+                  <FaChartLine className="w-16 h-16 text-indigo-600 mx-auto mb-4" />
+                ),
               },
             ].map((item, index) => (
               <motion.div
@@ -200,7 +211,9 @@ const HomePage = () => {
                 className="flex-1 bg-white p-6 rounded-lg shadow-md"
               >
                 {item.icon}
-                <h3 className="text-2xl font-semibold text-gray-800 mb-2">{item.step}</h3>
+                <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                  {item.step}
+                </h3>
                 <p className="text-gray-600">{item.desc}</p>
               </motion.div>
             ))}
@@ -272,7 +285,9 @@ const HomePage = () => {
                   alt={reason.title}
                   className="w-24 h-24 mb-4 mx-auto"
                 />
-                <h3 className="text-2xl font-semibold text-gray-800 mb-2">{reason.title}</h3>
+                <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                  {reason.title}
+                </h3>
                 <p className="text-gray-600">{reason.desc}</p>
               </motion.div>
             ))}
@@ -292,7 +307,8 @@ const HomePage = () => {
           Ready to Transform Your Future?
         </motion.h2>
         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-          Join thousands of students mastering academics and coding with Campus Bridge.
+          Join thousands of students mastering academics and coding with Campus
+          Bridge.
         </p>
         <div className="flex justify-center gap-4">
           <motion.button

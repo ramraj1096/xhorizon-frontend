@@ -7,12 +7,13 @@ export const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   const fetchUser = async () => {
     try {
       const { data } = await axios.get("/api/users/get-profile");
+      console.log(data);
       if (data.success) {
-        setUser(data.user);
+        setUser(data.student);
       } else {
         setUser(null);
       }
@@ -28,7 +29,6 @@ const AuthProvider = ({ children }) => {
       await axios.post("/api/users/logout");
       setUser(null);
       navigate("/register");
-
     } catch (error) {
       console.error("Logout error:", error);
     }

@@ -10,9 +10,7 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between py-4 mb-5 text-lg  ">
-    <img onClick={() => navigate('/')} className="cursor-pointer w-44" src={assets.logo} alt="Logo" />
-
-    
+      <p onClick={() => navigate('/')} className="cursor-pointer w-44">Campus Bridge</p>
     <ul className="hidden gap-6 text-base font-medium md:flex">
       <NavLink to="/" className={({ isActive }) => isActive ? "active text-blue-500" : ""}> <li className="py-1 text-lg cursor-pointer">Home</li> </NavLink>
       <NavLink to="/about"   className={({ isActive }) => isActive ? "active text-blue-500" : ""} > <li className="py-1 text-lg cursor-pointer">About</li> </NavLink>

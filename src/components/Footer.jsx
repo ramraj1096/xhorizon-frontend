@@ -9,10 +9,10 @@ export const Footer = () => {
         {/* Brand Info */}
         <div>
           <h1 className="text-blue-500 text-3xl font-semibold mb-4 text-primary">
-            MediConnect
+           Campus Bridge
           </h1>
           <p className="text-gray-600 leading-relaxed max-w-xs">
-            MediConnect is your trusted platform for managing doctor
+            Campus Bridge is your trusted platform for managing doctor
             consultations and appointments, providing seamless and efficient
             healthcare access.
           </p>
